@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{blindtext}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+
+\usepackage[style=authoryear-icomp,maxbibnames=9,maxcitenames=2,backend=biber]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\linespread{1.25}
+
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+
+\addbibresource{cite.bib}
+
+\begin{document}
+    
+    \begin{titlepage}
+        \includegraphics[width=0.6\textwidth]{images/fhnw.png}
+        \vspace{4cm}
+        
+        \vspace{1cm}
+        
+        {\Huge \textbf{<Titel>}}\\
+        Bachelor Thesis
+        {\today}\\
+        
+        \vfill
+        Author:\\
+        \textbf{<Vorname und Nachname>}\\
+        Student\\
+        Hochschule Life Sciences\\
+        Fachhochschule Nordwestschweiz\\
+        
+    \end{titlepage}
+    \pagebreak
+    
+    \begin{independence}
+        \section*{Auftraggeber}
+        <Titel, Vorname, Nachname und Firme Auftraggeber>
+        \section*{Betreuer (Firma)}
+        <Titel, Vorname, Nachname und Firme Auftraggeber>
+        \section*{Gutachter}
+        <Titel, Vorname, Nachname und Firme Auftraggeber>
+        \section*{Experte}
+        <Titel, Vorname, Nachname und Firme Auftraggeber>
+        \section*{Vertraulichkeitsstatus}
+        <Angabe, ob die Arbeit vertraulich ist oder nicht>
+        \vspace*{\fill}
+        \section*{Eigenständigkeitserklärung}
+            Hiermit versichere ich, dass ich die von mir vorgelegte Arbeit selbstständig verfasst habe, dass ich die verwendeten Quellen, Internet-Quellen und Hilfsmittel vollständig angegeben habe und dass ich die Stellen der Arbeit einschliesslich Tabellen, Karten und Abbildungen, die anderen Werken oder dem Internet im Wortlaut oder dem Sinn nach entnommen sind, auf jeden Fall unter Angabe der Quelle als Entlehnung kenntlich gemacht habe.
+            
+            \vspace{1cm}
+            
+            Ort, Datum:\\  
+            \vspace{1cm}
+            \hrulefill
+            
+            \vspace{1cm}
+            
+            Unterschrift:\\ 
+            \vspace{1cm}
+            \hrulefill 
+    \end{independence}
+    
+    \pagebreak
+    \begin{Abstract}
+        \section*{Abstract}
+        \input{chapters/abstract}
+        \section*{Zusammenfassung}
+        \input{chapters/zusammenfassung}
+    \end{Abstract}
+    
+    \pagebreak
+    
+    \begin{thanknote}
+        \section*{Danksagung}
+        \input{chapters/thanknote}
+    \end{thanknote}
+    
+    \pagebreak
+    
+    \tableofcontents
+    
+    \pagebreak
+    
+    \section{Einleitung}
+        \input{chapters/einleitung}
+    
+    \section{Material \& Methoden}
+        \input{chapters/material und methoden}
+       
+    \section{Ergebnisse}
+        \input{chapters/ergebnisse}
+    
+    \section{Diskussion}
+        \input{chapters/diskussion}
+    
+    \section{Schlussfolgerung und Zusammenfassungen}
+        \input{chapters/schlussfolgerung}
+    \pagebreak
+    
+    \annex
+    \section{Anhang}
+        \input{chapters/anhang}
+        
+    \section{Glosar}
+        \input{chapters/glosar}
+    
+    \printbibliography[title={Referenzen}]
+        
+\end{document}
