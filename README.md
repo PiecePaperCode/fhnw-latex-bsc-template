@@ -1,4 +1,4 @@
-# fhnw-latex-bsc-template
+# fhnw latex bachelor template
 Welcome to my Latex template.
 
 This template is a custom build inofficial Bachelors Template for your thesis.
